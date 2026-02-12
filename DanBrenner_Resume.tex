@@ -1,0 +1,77 @@
+\documentclass{article}
+
+\input{sections/preamble}
+
+%% ============== DOCUMENT ==============
+\begin{document}
+\thispagestyle{empty}
+\lhead{Resume p.\,\thepage}
+\rhead{Daniel Brenner}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+
+%% ============== HEADER ==============
+\centerline{\large\textsc{Resume}}
+\vspace{.5cm}
+\noindent\Large\textbf{Daniel Brenner} \\
+\large Phonetician, Software Engineer \\
+
+\noindent
+\begin{tabular}{c l}
+	\faPhoneSquare* & (406) 696\textendash 7069 \\
+	\faEnvelope & \href{mailto:dsbrenner@proton.me}{\texttt{dsbrenner@proton.me}} \\
+	\faGithub & \href{https://www.github.com/dbqpdb}{\texttt{https://www.github.com/dbqpdb}} \\
+	\faLinkedin & \href{https://www.linkedin.com/in/daniel-brenner-046597140}{\texttt{https://www.linkedin.com/in/daniel-brenner-046597140}}
+\end{tabular}
+
+%% ============== EDUCATION ==============
+\sectionspacing
+\subsection*{Education}
+\noindent
+\begin{longtable}{p{.2\textwidth} p{.7\textwidth}}
+	2015 & Ph.D, Department of Linguistics, University of Arizona, Tucson. Phonetics, Cognitive Science. \\ \\
+	2011 & M.S., Department of Linguistics, University of Arizona, Tucson. \mbox{Human Language Technology.} \\ \\
+	2008 & M.A., Department of East Asian Studies, University of Arizona, Tucson. Japanese Linguistics. \\ \\
+	2003 & B.A., Department of East Asian Studies, Oakland University, Rochester, Michigan. East Asian Studies.
+\end{longtable}
+
+%% ============== RECENT EMPLOYMENT ==============
+\sectionspacing
+\subsection*{Employment}
+\noindent
+\begin{longtable}{p{.2\textwidth} p{.7\textwidth}}
+	Spring 2026 & \textit{Lecturer}, Human Language Technology Program, Department of Linguistics, University of Arizona, Tucson, AZ. Teaching online ``LING 538: Computational Linguistics'' and ``LING 696G: Advanced Speech Technology''. \\ \\
+	\daterange{May 2025}{present} & \textit{Independent Software Engineer}. Write statistical software for vision systems for manufacturing. \\ \\
+	Spring 2025 & \textit{Lecturer}, Human Language Technology Program, Department of Linguistics, University of Arizona, Tucson, AZ. Taught online ``LING 539: Statistical Natural Language Processing''. \\ \\
+	\daterange{2020}{2024} & \textit{Associate AI Engineer}, ETS, San Francisco, CA, and remote. Designed, optimized, and customized speech and text features for use in automated scoring engines enabling targeted, actionable feedback for language learners. \\ \\
+	\daterange{2017}{2019} & \textit{Manager}, Living Zen Organics, Detroit, MI. Managed, cooked for, and did accounting for an organic food co-op supporting a Buddhist community. \\ \\
+	\daterange{2015}{2017} & \textit{Postdoctoral Research Fellow}, Alberta Phonetics Laboratory, University of Alberta, Edmonton, Canada. Speech production and perception research.
+\end{longtable}
+
+%% ============== SKILLS ==============
+\sectionspacing
+\subsection*{Skills}
+\begin{itemize}
+	\item[$\circ$] \textbf{Programming:} Python, R, Praat scripting, shell scripting, LaTeX
+	\item[$\circ$] \textbf{Machine Learning:} Speech recognition, NLP, automated scoring systems
+	\item[$\circ$] \textbf{Languages:} English, Japanese (fluent), Mandarin (fluent)
+	\item[$\circ$] \textbf{Research:} Phonetics, speech production/perception, corpus linguistics
+\end{itemize}
+
+%% ============== SELECTED PUBLICATIONS ==============
+\sectionspacing
+\subsection*{Selected Publications}
+\vspace{-1.2em}
+\linkedbib{https://www.mdpi.com/2226-471X/10/1/8}{warner2025non}
+\linkedbib{https://pubs.aip.org/asa/jasa/article-abstract/154/3/1896/2912771/Examining-the-effect-of-high-frequency-information?redirectedFrom=fulltext}{kharlamov2023examining}
+\linkedbib{https://link.springer.com/article/10.3758/s13428-018-1056-1}{Tucker2018}
+
+%% ============== FOOTER ==============
+\cfoot{\small\it Last revised \today}
+
+%% ============== BIBLIOGRAPHY ==============
+\bibliographystyle{alpha}
+\nobibliography{/home/db/JabRef/lit.bib}
+
+\end{document}

@@ -1,0 +1,38 @@
+%% ============== PACKAGES ==============
+\usepackage{fullpage}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{longtable}
+\usepackage{hanging}
+\usepackage{tipa}
+\usepackage{natbib}
+\usepackage{fontawesome5}
+\usepackage{bibentry}
+\usepackage[colorlinks=true,urlcolor=black,citecolor=black,linkcolor=black]{hyperref}
+\usepackage{needspace}
+
+%% ============== PAGE SETUP ==============
+\pagestyle{fancy}
+\setromanfont[Numbers=OldStyle,Mapping=tex-text]{Linux Libertine O}
+\setlength\headheight{15pt}
+\setlength\headsep{3ex}
+
+%% ============== CUSTOM COMMANDS ==============
+% Spacing
+\newlength\indentThisMuch
+\setlength\indentThisMuch{4ex}
+\newcommand{\sectionspacing}{\needspace{8\baselineskip}\vspace{0.5cm}}
+
+% Date range with consistent formatting
+\newcommand{\daterange}[2]{#1 \textendash\ #2}
+
+% Bibliography entries
+\nobibliography*
+\newcommand\hangbibentry[1]{%
+    \smallskip\par\hangpara{\indentThisMuch}{1}\bibentry{#1}.\smallskip\par
+}
+\newcommand{\linkedbib}[2]{\href{#1}{\hangbibentry{#2}}}
