@@ -1,8 +1,8 @@
-# Makefile for building CV, Resume, and Publications with xelatex
+# Makefile for building CV, Resume, and Dissemination documents with xelatex
 # Usage:
 #   make          - build CV and clean auxiliary files
 #   make resume   - build Resume and clean auxiliary files
-#   make pubs     - build Publications list and clean auxiliary files
+#   make pubs     - build Dissemination list and clean auxiliary files
 #   make all-docs - build all documents
 #   make debug    - build CV and keep auxiliary files
 #   make clean    - remove all generated files
@@ -10,7 +10,7 @@
 
 CV = DanBrenner_CV
 RESUME = DanBrenner_Resume
-PUBS = DanBrenner_Publications
+PUBS = DanBrenner_Dissemination
 LATEX = xelatex -interaction=nonstopmode -halt-on-error
 BIBTEX = bibtex
 
@@ -31,7 +31,7 @@ resume: $(RESUME).pdf
 
 pubs: $(PUBS).pdf
 	@rm -f $(PUBS_AUX)
-	@echo "Publications build complete. Auxiliary files cleaned."
+	@echo "Dissemination build complete. Auxiliary files cleaned."
 
 all-docs: all resume pubs
 	@echo "All documents built successfully."
